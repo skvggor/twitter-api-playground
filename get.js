@@ -1,6 +1,6 @@
-var login = require('./login.js');
+var twitterLogin = require('twitter-login');
 
-login.client().get('search/tweets', {
+twitterLogin.client().get('search/tweets', {
 	q: '#nodejs',
 	result_type: 'recent',
 	count: 50
